@@ -3,6 +3,7 @@
   import { onDestroy } from 'svelte';
   import { goto } from '$app/navigation';
   import { resolve } from '$app/paths';
+  import peti from '$lib/assets/peti.jpg';
 
   let screen = 0;
   let step = 0;
@@ -63,8 +64,9 @@
 {#if screen === 1}
   <div class="screen screen-image">
     <img
-      src="/images/key_in_snow.webp"
-      alt="Avaimenperä lumessa"
+      src={peti}
+      alt="peti"
+      class="fade-edges"
     />
 
     <p>
@@ -116,4 +118,22 @@
   .continue:hover {
     background: #ffffff20;
   }
+
+  .fade-edges {
+    width: 320px;
+    margin: 0 auto;
+
+    -webkit-mask-image: radial-gradient(
+      ellipse at center,
+      black 35%,
+      transparent 71%
+    );
+
+    mask-image: radial-gradient(
+      ellipse at center,
+      black 35%,
+      transparent 71%
+    );
+  }
+
 </style>

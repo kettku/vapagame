@@ -1,0 +1,1 @@
+import{P as e,Q as a,R as t,S as l,u}from"./CutV3A7G.js";function c(n){t===null&&e(),l&&t.l!==null?s(t).m.push(n):a(()=>{const o=u(n);if(typeof o=="function")return o})}function i(n){t===null&&e(),c(()=>()=>u(n))}function s(n){var o=n.l;return o.u??={a:[],b:[],m:[]}}export{c as a,i as o};
