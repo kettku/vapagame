@@ -1,0 +1,1 @@
+import{h as r}from"./Bw33j6Jq.js";function i(t,e){return t==null?null:String(t)}function y(t,e,u,l){var n=t.__style;if(r||n!==e){var s=i(e);(!r||s!==t.getAttribute("style"))&&(s==null?t.removeAttribute("style"):t.style.cssText=s),t.__style=e}return l}const f=""+new URL("../assets/bubble.CQPaom5D.png",import.meta.url).href;export{f as p,y as s};
