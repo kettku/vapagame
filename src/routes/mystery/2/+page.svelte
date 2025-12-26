@@ -36,6 +36,8 @@ tallentuneet kryptattuna."
 
 <script lang="ts">
 	import { goto } from '$app/navigation';
+  import { base } from '$app/paths';
+
 	let input = '';
 	const correct = 'OTTO';
 
@@ -49,7 +51,7 @@ tallentuneet kryptattuna."
 
 	function handleClick() {
 		attempted = true;
-		if (isCorrect) goto('/scenes/3');
+		if (isCorrect) goto(`${base}/scenes/3`);
 	}
 </script>
 
@@ -93,20 +95,4 @@ tallentuneet kryptattuna."
 		margin-top: 1rem;
 		font-weight: 700;
 	}
-
-  .fade-edges {
-    width: 420px;
-
-    -webkit-mask-image: radial-gradient(
-      ellipse at center,
-      black 35%,
-      transparent 75%
-    );
-
-    mask-image: radial-gradient(
-      ellipse at center,
-      black 35%,
-      transparent 75%
-    );
-  }
 </style>

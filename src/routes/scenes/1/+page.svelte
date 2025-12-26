@@ -5,6 +5,7 @@
   import saaraVilkuttaa from '$lib/assets/saara-vilkuttaa.jpg';
   import saaraMiettii from '$lib/assets/saara-miettii.jpg';
   import puhekupla from '$lib/assets/bubble.png';
+  import { base } from '$app/paths';
 
   let bubbleStep = 0;
   let bubbleTimer: ReturnType<typeof setTimeout>;
@@ -42,7 +43,7 @@
     }
 
     if (screen === 2) {
-      goto('/mystery/1');
+      goto(`${base}/mystery/1`);
     }
   }
 

@@ -5,6 +5,7 @@
   import heijastin from '$lib/assets/heijastin.jpg';
   import puhekupla from '$lib/assets/bubble.png';
   import teemu from '$lib/assets/teemu.jpg';
+  import { base } from '$app/paths';
 
   let bubbleStep = 0;
   let bubbleTimer: ReturnType<typeof setTimeout>;
@@ -48,7 +49,7 @@
     }
 
     if (screen === 3) {
-      goto('/mystery/2');
+      goto(`${base}/mystery/2`);
     }
   }
 
