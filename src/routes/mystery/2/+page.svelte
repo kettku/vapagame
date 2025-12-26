@@ -36,7 +36,7 @@ tallentuneet kryptattuna."
 
 <script lang="ts">
 	import { goto } from '$app/navigation';
-  import { base } from '$app/paths';
+  import { resolve } from '$app/paths';
 
 	let input = '';
 	const correct = 'OTTO';
@@ -51,7 +51,7 @@ tallentuneet kryptattuna."
 
 	function handleClick() {
 		attempted = true;
-		if (isCorrect) goto(`${base}/scenes/3`);
+		if (isCorrect) goto(resolve(`/scenes/3`));
 	}
 </script>
 

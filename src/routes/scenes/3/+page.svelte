@@ -4,7 +4,7 @@
   import { goto } from '$app/navigation';
   import otto from '$lib/assets/otto.jpg';
   import puhekupla from '$lib/assets/bubble.png';
-  import { base } from '$app/paths';
+  import { resolve } from '$app/paths';
 
   let bubbleStep = 0;
   let bubbleTimer: ReturnType<typeof setTimeout>;
@@ -36,7 +36,7 @@
     }
 
     if (screen === 1) {
-      goto(`${base}/mystery/3`);
+      goto(resolve(`/mystery/3`));
     }
   }
 

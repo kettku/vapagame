@@ -30,7 +30,7 @@ Otto on asetellut lelujaan järjestykseen.
 
 <script lang="ts">
 	import { goto } from '$app/navigation';
-  import { base } from '$app/paths';
+  import { resolve } from '$app/paths';
 
 	let input = '';
 	const correct = 'NAKKI';
@@ -45,7 +45,7 @@ Otto on asetellut lelujaan järjestykseen.
 
 	function handleClick() {
 		attempted = true;
-		if (isCorrect) goto(`${base}/final`);
+		if (isCorrect) goto(resolve(`/final`));
 	}
 </script>
 

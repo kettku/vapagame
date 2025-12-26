@@ -2,7 +2,7 @@
   import { fade } from 'svelte/transition';
   import { onDestroy } from 'svelte';
   import { goto } from '$app/navigation';
-  import { base } from '$app/paths';
+  import { resolve } from '$app/paths';
 
   let screen = 0;
   let step = 0;
@@ -30,7 +30,7 @@
     }
 
     if (screen === 2) {
-      goto(`${base}/scenes/1`);
+      goto(resolve(`/scenes/1`));
     }
   }
 

@@ -102,7 +102,7 @@ kauan lenkkiä oli silloin mennyt. Muutama kilsa?"
 
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 
 	let nInput = '';
 	let eInput = '';
@@ -120,7 +120,7 @@ kauan lenkkiä oli silloin mennyt. Muutama kilsa?"
 
 	function handleClick() {
 		attempted = true;
-		if (isCorrect) goto(`${base}/scenes/2`);
+		if (isCorrect) goto(resolve(`/scenes/2`));
 	}
 </script>
 
